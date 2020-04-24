@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>AprendePy-Cursos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+			    <!-- Menu -->
+                <h1>AprendePy</h1>
+                <nav>
+	                <a href="/">Inicio</a>
+	                <a href="/cursos/">Cursos</a>
+	                <a href="/contacto/">Contacto</a>
+	                <a href="/about/">About</a>
+	                <a href="/faq/">FAQ</a>
+	                <div class="animation start-home"></div>
+                </nav>
+				<h1>Cursos</h1>
+			</header>
+
+		<section>
+			{% for dato in name %}
+				<h2> {{dato.nombreCurso}}</h2>
+				<h3> Descripcion: </h3>
+				<p> {{dato.descripcionCurso|linebreaks}} </p>
+				<p> Autor: {{dato.autor}} </p>
+				<a href= {{dato.link}} > Click para acceder al archivo del Curso: </a>
+				
+			{% endfor %}
+		</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/lucasvegap" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/lucas_vegap/?hl=es-la" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/LucasVega777" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:lucasmvegap@gmail.com?Subject=Hello%20again" class="icon fa-envelope">
+					<span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; AprendePy .</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
