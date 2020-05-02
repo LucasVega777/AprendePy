@@ -38,7 +38,7 @@
 						images: {
 							'/static/images/bg00.png': 'center',
 							'/static/images/bg01.png': 'center',
-							'/static/images/bg02.png': 'center',
+							'/static/images/bg02.jpg': 'center',
 							'/static/images/bg03.jpg': 'center',
 						},
 
