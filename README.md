@@ -6,6 +6,6 @@ Este proyecto aun esta en desarrollo
 
 * Lucas Vega https://github.com/lucasvega777
 
+# License
 
-License
-This project is licensed under the Apache 2.0 License - see the [LICENSE.txt]LICENSE.txt file for details
+This project is licensed under the Apache 2.0 License - see the [LICENSE.txt](LICENSE.txt) file for details
