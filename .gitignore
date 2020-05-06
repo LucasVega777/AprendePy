@@ -1,6 +1,6 @@
 
-# Creado por https://www.gitignore.io/api/venv,linux,django,python
-# Editar en https://www.gitignore.io/?templates=venv,linux,django,python
+# Creado por https://www.gitignore.io/api/venv,linux,django,python,visualstudiocode
+# Editar en https://www.gitignore.io/?templates=venv,linux,django,python,visualstudiocode
 
 ### Django ###
 *.Iniciar sesión
@@ -194,4 +194,15 @@ env.bak /
 venv.bak /
 pip-selfcheck.json
 
-# Fin de https://www.gitignore.io/api/venv,linux,django,python
+### VisualStudioCode ###
+.vscode / *
+! .vscode / settings.json
+! .vscode / task.json
+! .vscode / launch.json
+! .vscode / extensiones.json
+
+### VisualStudioCode Patch ###
+# Ignorar todo el historial local de archivos
+.historia
+
+# Fin de https://www.gitignore.io/api/venv,linux,django,python,visualstudiocode
