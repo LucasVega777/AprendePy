@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Curso
+from .models import Autor
 # Create your views here.
 
 def inicio(request):
@@ -25,3 +26,19 @@ def faq(request):
     return render(request, "faq.html")
 
 
+def autores(request):
+    lista_autores = Autor.objects.order_by("nombreAutor")
+    nombre_Autores = { "name": lista_autores, "titulo": "Autores" }
+    return render(request, "autores.html", nombre_Autores)
+
+
+def fautores(request, nombre):
+    resultado = Autor.objects.filter(nombreAutor__icontains=nombre)
+    if (len(resultado)==1):
+        titulo = "Autor"
+    elif(len(resultado)>1):
+        titulo = "Autores"
+    else:
+        titulo = "No se encontraron Resultados"
+    nombre_Autores = {'name':resultado, "titulo": titulo}
+    return render(request, 'autores.html', nombre_Autores)

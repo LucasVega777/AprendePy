@@ -5,9 +5,11 @@ from django.db import models
 
 class Autor(models.Model):
     nombreAutor = models.CharField(max_length=60)
+    descripcion = models.TextField(null=True, blank=True,default="No hay descripcion")
     correo = models.EmailField(null=True, blank=True) #para que sea un campo opcional
     github = models.URLField(null=True, blank=True)
-    
+    imagen = models.ImageField(upload_to='images', null = True)
+
     def __str__(self):
         return self.nombreAutor
 
@@ -24,11 +26,3 @@ class Curso(models.Model):
     
 
     
-
-# class Unidad(models.Model):
-#     nombreUnidad = models.CharField(max_length=100)
-#     link = models.URLField(null=True, blank=True)    
-
-#     def __str__(self):
-#         return self.nombreUnidad
-

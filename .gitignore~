@@ -1,0 +1,194 @@
+# Creado por https://www.gitignore.io/api/linux,django,python,visualstudiocode
+# Editar en https://www.gitignore.io/?templates=linux,django,python,visualstudiocode
+
+### Django ###
+*.Iniciar sesión
+*.maceta
+* .pyc
+__pycache __ /
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+medios de comunicación
+
+# Si su proceso de compilación incluye la ejecución de collectstatic, entonces probablemente no necesite o quiera incluir archivos static /
+# en tu repositorio de Git. Actualice y descomente la siguiente línea en consecuencia.
+# <django-project-name> / staticfiles /
+
+### Django.Python Stack ###
+# Byte-compilado / optimizado / archivos DLL
+* .py [bacalao]
+* $ py.class
+
+# C extensiones
+*.entonces
+
+# Distribución / embalaje
+.Pitón
+construir/
+desarrollar huevos /
+dist /
+descargas /
+huevos/
+.huevos/
+lib /
+lib64 /
+partes/
+sdist /
+var /
+ruedas /
+pip-wheel-metadata /
+compartir / ruedas de pitón /
+* .egg-info /
+.installed.cfg
+*.huevo
+MANIFIESTO
+
+# PyInstaller
+# Por lo general, estos archivos están escritos por un script de Python a partir de una plantilla
+# antes de que PyInstaller compile el exe, para inyectarle la fecha / otras informaciones.
+*.manifiesto
+*.Especificaciones
+
+# Registros del instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Prueba de unidad / informes de cobertura
+htmlcov /
+.tox /
+.nox /
+.cobertura
+.cobertura.*
+.cache
+nosetests.xml
+cobertura.xml
+*.cubrir
+.hipótesis/
+.pytest_cache /
+
+# Traducciones
+*.mes
+
+# Cosas quebradizas:
+.scrapy
+
+# Documentación de la esfinge
+docs / _build /
+
+# PyBuilder
+objetivo/
+
+# pyenv
+versión .python
+
+# pipenv
+# Según pypa / pipenv # 598, se recomienda incluir Pipfile.lock en el control de versiones.
+# Sin embargo, en caso de colaboración, si tiene dependencias o dependencias específicas de la plataforma
+# al no tener soporte multiplataforma, pipenv puede instalar dependencias que no funcionan o no
+# instalar todas las dependencias necesarias.
+# Pipfile.lock
+
+# archivo de calendario de ritmo de apio
+horario de apio
+
+# SageMath analizó archivos
+* .sage.py
+
+# Configuración del proyecto Spyder
+.spyderproject
+.spyproject
+
+# Configuración del proyecto de cuerda
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.proyecto
+.pydevproject
+
+# documentación mkdocs
+/sitio
+
+# mypy
+.mypy_cache /
+.dmypy.json
+dmypy.json
+
+# Comprobador de tipo pira
+.pira/
+
+### Linux ###
+* ~
+
+# archivos temporales que se pueden crear si un proceso todavía tiene un identificador abierto de un archivo eliminado
+.fuse_hidden *
+
+# Preferencias de directorio de KDE
+.directorio
+
+# Carpeta de basura de Linux que puede aparecer en cualquier partición o disco
+.Basura-*
+
+Los archivos # .nfs se crean cuando se elimina un archivo abierto pero aún se accede a él
+.nfs *
+
+### Python ###
+# Byte-compilado / optimizado / archivos DLL
+
+# C extensiones
+
+# Distribución / embalaje
+
+# PyInstaller
+# Por lo general, estos archivos están escritos por un script de Python a partir de una plantilla
+# antes de que PyInstaller compile el exe, para inyectarle la fecha / otras informaciones.
+
+# Registros del instalador
+
+# Prueba de unidad / informes de cobertura
+
+# Traducciones
+
+# Cosas quebradizas:
+
+# Documentación de la esfinge
+
+# PyBuilder
+
+# pyenv
+
+# pipenv
+# Según pypa / pipenv # 598, se recomienda incluir Pipfile.lock en el control de versiones.
+# Sin embargo, en caso de colaboración, si tiene dependencias o dependencias específicas de la plataforma
+# al no tener soporte multiplataforma, pipenv puede instalar dependencias que no funcionan o no
+# instalar todas las dependencias necesarias.
+
+# archivo de calendario de ritmo de apio
+
+# SageMath analizó archivos
+
+# Configuración del proyecto Spyder
+
+# Configuración del proyecto de cuerda
+
+# Mr Developer
+
+# documentación mkdocs
+
+# mypy
+
+# Comprobador de tipo pira
+
+### VisualStudioCode ###
+.vscode / *
+! .vscode / settings.json
+! .vscode / task.json
+! .vscode / launch.json
+! .vscode / extensiones.json
+
+### VisualStudioCode Patch ###
+# Ignorar todo el historial local de archivos
+.historia
+
+# Fin de https://www.gitignore.io/api/linux,django,python,vi

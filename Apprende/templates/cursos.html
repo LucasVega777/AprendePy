@@ -29,7 +29,9 @@
 				<h2> {{dato.nombreCurso}}</h2>
 				<h3> Descripcion: </h3>
 				<p> {{dato.descripcionCurso|linebreaks}} </p>
-				<p> Autor: {{dato.autor}} </p>
+				{% for autor in dato.autor.all%} 
+					<a href= "/autores/{{autor.nombreAutor}}"> Autor: {{autor.nombreAutor}} </a> <br>
+				{% endfor %}
 				<a href= {{dato.link}} > Click para acceder al archivo del Curso: </a>
 				
 			{% endfor %}
@@ -42,7 +44,7 @@
 					<li><a href="https://twitter.com/lucasvegap" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://www.instagram.com/lucas_vegap/?hl=es-la" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://github.com/LucasVega777" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:lucasmvegap@gmail.com?Subject=Hello%20again" class="icon fa-envelope">
+					<li><a href="mailto:lucasmvegap@gmail.com" class="icon fa-envelope">
 					<span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
