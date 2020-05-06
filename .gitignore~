@@ -1,5 +1,6 @@
-# Creado por https://www.gitignore.io/api/linux,django,python,visualstudiocode
-# Editar en https://www.gitignore.io/?templates=linux,django,python,visualstudiocode
+
+# Creado por https://www.gitignore.io/api/venv,linux,django,python
+# Editar en https://www.gitignore.io/?templates=venv,linux,django,python
 
 ### Django ###
 *.Iniciar sesión
@@ -180,15 +181,17 @@ Los archivos # .nfs se crean cuando se elimina un archivo abierto pero aún se a
 
 # Comprobador de tipo pira
 
-### VisualStudioCode ###
-.vscode / *
-! .vscode / settings.json
-! .vscode / task.json
-! .vscode / launch.json
-! .vscode / extensiones.json
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+pyvenv.cfg
+.env
+.venv
+env /
+venv /
+ENV /
+env.bak /
+venv.bak /
+pip-selfcheck.json
 
-### VisualStudioCode Patch ###
-# Ignorar todo el historial local de archivos
-.historia
-
-# Fin de https://www.gitignore.io/api/linux,django,python,vi
+# Fin de https://www.gitignore.io/api/venv,linux,django,python

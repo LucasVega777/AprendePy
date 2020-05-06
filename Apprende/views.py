@@ -42,3 +42,15 @@ def fautores(request, nombre):
         titulo = "No se encontraron Resultados"
     nombre_Autores = {'name':resultado, "titulo": titulo}
     return render(request, 'autores.html', nombre_Autores)
+
+
+def fcursos(request,nombre):
+    resultado = Curso.objects.filter(nombreCurso__icontains=nombre)
+    if (len(resultado)==1):
+        titulo = "Curso"
+    elif(len(resultado)>1):
+        titulo = "Cursos"
+    else:
+        titulo = "No se encontraron Resultados"
+    nombre_Cursos = {'name': resultado, "titulo": titulo}
+    return render(request, "cursos.html", nombre_Cursos)
