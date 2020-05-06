@@ -257,11 +257,11 @@ a {
   -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   transition: border-bottom-color 0.2s ease, color 0.2s ease;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-  color: #1cb495;
+  color: #f60c03; /* cuando pones el cursor encima*/
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
-    color: #1cb495 !important;
+    color: #f60c03 !important; /* cuando pones el cursor encima*/
     text-decoration: none; }
 
 strong, b {
@@ -353,9 +353,19 @@ hr {
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
+/* Agrego para titulos*/
+header h1 {
+  color: rgb(255, 0, 0);
+  position: relative;
+  margin: 0 0 1.5em 0; }
+/* Agrego para nombres de cursos*/
+ header h2 {
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin: 0 0 1.5em 0; }
 
 header p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   position: relative;
   margin: 0 0 1.5em 0; }
 
@@ -719,7 +729,7 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
-/* Button */
+/* Button 
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -775,6 +785,7 @@ button,
     button,
     .button {
       padding: 0; } }
+  */
 
 /* Header */
 #header h1 {
@@ -798,7 +809,7 @@ button,
   #header {
     margin: 0 0 1em 0; } }
 
-/* Signup Form */
+/* Signup Form 
 #signup-form {
   display: -moz-flex;
   display: -webkit-flex;
@@ -833,6 +844,7 @@ button,
         line-height: inherit;
         margin-top: 0;
         position: absolute; } }
+*/
 
 /* Footer */
 #footer {
@@ -891,8 +903,20 @@ button,
  * */
 
 
+
+
+
+
+
+
+
+
+
+
+ 
+/*
 nav {
-	/*margin: 27px auto 0;*/
+	//margin: 27px auto 0;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -968,3 +992,4 @@ nav .start-faq, a:nth-child(5):hover~.animation {
 	background-color: #3498db;
 }
 
+*/

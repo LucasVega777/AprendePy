@@ -1,14 +1,14 @@
 {%  extends 'base.html' %}
 {% block  contenido %}
-<h1> {{ titulo }} </h1>
+<h1> {{ titulo}} <h1>
 	{% for dato in name %}
 		<h2> {{dato.nombreCurso}}</h2>
-		<h3> Descripcion: </h3>
-		<p> {{dato.descripcionCurso|linebreaks}} </p>
-		{% for autor in dato.autor.all%} 
-			<a href= "/autores/{{autor.nombreAutor}}"> Autor: {{autor.nombreAutor}} </a> <br>
-		{% endfor %}
-		<a href= {{dato.link}} > Click para acceder al archivo del Curso: </a>
-		
+		<p> Descripcion: 
+			{{dato.descripcionCurso}} <br>
+			{% for autor in dato.autor.all%} 
+				<a href= "/autores/{{autor.nombreAutor}}"> Autor: {{autor.nombreAutor}} </a> <br>
+			{% endfor %}
+			<a href= {{dato.link}} > Click para acceder al archivo del Curso: </a>
+		</p>
 	{% endfor %}
 {% endblock contenido %}
