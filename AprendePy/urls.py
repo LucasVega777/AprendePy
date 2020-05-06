@@ -26,7 +26,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('faq/', views.faq, name='faq'),
     path('autores/', views.autores,name='autores'),
-    path('autores/<str:nombre>', views.fautores),
-    path('cursos/<str:nombre>', views.fcursos),
+    path('autores/<str:nombre>', views.fautores,name='fautores'),
+    path('cursos/<str:nombre>', views.fcursos,name='fcursos'),
     #Creamos la ruta raiz '' y la enlazamos con nuestra vista index del archivo views.py
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

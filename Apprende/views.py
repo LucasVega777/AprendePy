@@ -10,7 +10,7 @@ def inicio(request):
 
 def cursos(request):
     lista_cursos = Curso.objects.order_by("nombreCurso")
-    nombre_cursos = { "name": lista_cursos }
+    nombre_cursos = { "name": lista_cursos, "titulo": "Cursos" }
     return render(request, "cursos.html", nombre_cursos)
 
 
