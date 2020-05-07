@@ -7,7 +7,7 @@
 		<p> Descripcion: 
 			{{dato.descripcionCurso}} <br>
 			{% for autor in dato.autor.all%} 
-				<a href= "/autores/{{autor.nombreAutor}}"> Autor: {{autor.nombreAutor}} </a> <br>
+				Autor: <a href= "/autores/{{autor.nombreAutor}}"> {{autor.nombreAutor}} </a> <br>
 			{% endfor %}
 			<a href= {{dato.link}} > Click para acceder al archivo del Curso: </a>
 		</p>

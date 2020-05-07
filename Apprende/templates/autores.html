@@ -10,8 +10,10 @@
         {% endif %}
 		<h3> Descripcion </h3>
         <p> {{dato.descripcion|linebreaks}} </p>
-		<a href=mailto:{{dato.correo}}> Correo: {{dato.correo}} </a>  <br>
-		<a href={{dato.github}} > Github: {{dato.github}} </a> <br>				
+		<p>
+			Correo: <a href=mailto:{{dato.correo}}>  {{dato.correo}} </a>  <br>
+			Github: <a href={{dato.github}} >  {{dato.github}} </a> <br>	
+		</p>			
 	{% endfor %} <br>
-    <a href="/autores/"> Click aqui para ver todos los Autores de todos los cursos </a>
+    <p> Click <a href="/autores/"> aqui  </a> para ver todos los Autores</p>
 {% endblock contenido %}
