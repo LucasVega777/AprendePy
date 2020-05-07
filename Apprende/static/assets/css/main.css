@@ -810,26 +810,80 @@ input[type="radio"] + label:before {
  * PARA EL MENU
  * */
 
-#button {
-  padding: 0;
+
+ nav {
+	/*margin: 27px auto 0;*/
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #ff0404;
+	border-radius: 8px;
+	font-size: 0;	
 }
-
-#button li {
-  display: inline;
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
 }
-
-#button li a {
-  font-family: Arial;
-  font-size: 100%;
-  text-decoration: none;
-  float: left;
-  padding: 10px;
-  background-color: #fd0808;
-  color: rgb(255, 255, 255);
-  }
-
-#button li a:hover {
-  background-color: #f1f3f5;
-  margin-top: -2;
-  padding-bottom: 12px;]
-  }
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-inicio, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #ffffff;
+}
+nav .start-cursos, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #ffffff;
+}
+nav .start-contacto, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #ffffff;
+}
+nav .start-about, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #ffffff;
+}
+nav .start-faq, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #ffffff;
+}
