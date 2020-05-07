@@ -355,12 +355,12 @@ section.special, article.special {
   text-align: center; }
 /* Agrego para titulos*/
 header h1 {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   position: relative;
   margin: 0 0 1.5em 0; }
 /* Agrego para nombres de cursos*/
- header h2 {
-  color: rgb(255, 255, 255);
+header h2 {
+  color: rgb(255, 000, 000);
   position: relative;
   margin: 0 0 1.5em 0; }
 
@@ -729,63 +729,6 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
-/* Button 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  background-color: #1cb495;
-  border-radius: 6px;
-  border: 0;
-  color: #ffffff !important;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  height: 2.75em;
-  line-height: 2.75em;
-  padding: 0 1.125em;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
-    background-color: #1fcaa7; }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
-  button:active,
-  .button:active {
-    background-color: #199e83; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].disabled,
-  input[type="button"]:disabled,
-  button.disabled,
-  button:disabled,
-  .button.disabled,
-  .button:disabled {
-    opacity: 0.5; }
-  @media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-      padding: 0; } }
-  */
 
 /* Header */
 #header h1 {
@@ -809,42 +752,7 @@ button,
   #header {
     margin: 0 0 1em 0; } }
 
-/* Signup Form 
-#signup-form {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  position: relative; }
-  #signup-form input[type="text"],
-  #signup-form input[type="password"],
-  #signup-form input[type="email"] {
-    width: 18em; }
-  #signup-form > * {
-    margin: 0 0 0 1em; }
-  #signup-form > :first-child {
-    margin: 0 0 0 0; }
-  @media screen and (max-width: 480px) {
-    #signup-form {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      #signup-form input[type="type"],
-      #signup-form input[type="password"],
-      #signup-form input[type="email"] {
-        width: 100%; }
-      #signup-form > * {
-        margin: 1.25em 0 0 0; }
-      #signup-form .message {
-        bottom: -1.5em;
-        font-size: 0.9em;
-        height: 1em;
-        left: 0;
-        line-height: inherit;
-        margin-top: 0;
-        position: absolute; } }
-*/
+
 
 /* Footer */
 #footer {
@@ -902,94 +810,26 @@ button,
  * PARA EL MENU
  * */
 
-
-
-
-
-
-
-
-
-
-
-
- 
-/*
-nav {
-	//margin: 27px auto 0;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	position: relative;
-	width: 590px;
-	height: 50px;
-	background-color: #34495e;
-	border-radius: 8px;
-	font-size: 0;	
-}
-nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-}
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
-}
-a:nth-child(1) {
-	width: 100px;
-}
-a:nth-child(2) {
-	width: 110px;
-}
-a:nth-child(3) {
-	width: 100px;
-}
-a:nth-child(4) {
-	width: 160px;
-}
-a:nth-child(5) {
-	width: 120px;
-}
-nav .start-inicio, a:nth-child(1):hover~.animation {
-	width: 100px;
-	left: 0;
-	background-color: #3498db;
-}
-nav .start-cursos, a:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 100px;
-	background-color: #3498db;
-}
-nav .start-contacto, a:nth-child(3):hover~.animation {
-	width: 100px;
-	left: 210px;
-	background-color: #3498db;
-}
-nav .start-about, a:nth-child(4):hover~.animation {
-	width: 160px;
-	left: 310px;
-	background-color: #3498db;
-}
-nav .start-faq, a:nth-child(5):hover~.animation {
-	width: 120px;
-	left: 470px;
-	background-color: #3498db;
+#button {
+  padding: 0;
 }
 
-*/
+#button li {
+  display: inline;
+}
+
+#button li a {
+  font-family: Arial;
+  font-size: 100%;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  background-color: #fd0808;
+  color: rgb(255, 255, 255);
+  }
+
+#button li a:hover {
+  background-color: #f1f3f5;
+  margin-top: -2;
+  padding-bottom: 12px;]
+  }

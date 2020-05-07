@@ -2,7 +2,8 @@
 {% block  contenido %}
 <h1> {{ titulo}} <h1>
 	{% for dato in name %}
-		<h2> {{dato.nombreCurso}}</h2>
+		<h2> {{dato.nombreCurso}} </h2>
+		<img width="150" src="/media/{{dato.imagen}}" alt="Image"> <br>
 		<p> Descripcion: 
 			{{dato.descripcionCurso}} <br>
 			{% for autor in dato.autor.all%} 

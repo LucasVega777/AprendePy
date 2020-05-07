@@ -1,16 +1,10 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-    Editado por: Lucas Vega
--->
 <html>
 	{% load staticfiles %}
 	<head>
 		<title>AprendePy</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="/static/assets/css/main.css" />
 		<link rel="shortcut icon" href="{% static 'favicon/favicon.png' %}"/>
 	</head>
@@ -31,10 +25,23 @@
 						</ul>
 					</nav>
 				</div>
-				{% block contenido %}   
-            	{% endblock %}
+                {% block contenido %}   
+                {% endblock %}
             </header>
 			
+
+        <!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/AprendePy" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/LucasVega777/AprendePy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:apprendepy@gmail.com" class="icon fa-envelope">
+					<span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; AprendePy.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="/admin"> Admin</a></li>
+				</ul>
+			</footer>
 		<!-- Scripts -->
 			<script src="/static/assets/js/main.js"></script>
 

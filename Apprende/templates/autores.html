@@ -3,8 +3,12 @@
 <h1> {{ titulo }} </h1>
 	{% for dato in name %}
 		<h2> {{dato.nombreAutor}}</h2>
-        <img width="150" src="/media/{{dato.imagen}}" alt="Image"> <br>
-        <h3> Descripcion </h3>
+		{%if dato.imagen == None%}
+			<img width="150" src="/media/images/default.jpg" alt="Image"> <br>
+		{% else %}
+        	<img width="150" src="/media/{{dato.imagen}}" alt="Image"> <br>
+        {% endif %}
+		<h3> Descripcion </h3>
         <p> {{dato.descripcion|linebreaks}} </p>
 		<a href=mailto:{{dato.correo}}> Correo: {{dato.correo}} </a>  <br>
 		<a href={{dato.github}} > Github: {{dato.github}} </a> <br>				
